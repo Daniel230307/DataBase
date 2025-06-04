@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>IndexedDB - Gestión de Películas</title>
+  <link rel="stylesheet" href="indexed.css">
+  <style>
+  #cajaformulario, #cajabusqueda {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #999;
+}
+
+#cajadatos {
+  clear: both;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #999;
+}
+
+#cajadatos > div {
+  padding: 5px;
+  border-bottom: 1px solid #999;
+}
+
+input[type="text"] {
+  width: 200px;
+  margin-bottom: 10px;
+}
+  </style>
+</head>
+<body>
+  <h1>Gestión de Películas</h1>
+
+  <section id="cajaformulario">
+    <form name="formulario">
+      <label for="clave">ID:</label><br>
+      <input type="text" name="clave" id="clave"><br>
+
+      <label for="texto">Título:</label><br>
+      <input type="text" name="texto" id="texto"><br>
+
+      <label for="fecha">Año:</label><br>
+      <input type="text" name="fecha" id="fecha"><br>
+
+      <button type="button" id="grabar">Grabar</button>
+    </form>
+  </section>
+
+  <section id="cajabusqueda">
+    <h3>Buscar por Año</h3>
+    <input type="text" id="anioBusqueda">
+    <button type="button" id="buscar">Buscar</button>
+  </section>
+
+  <section id="cajadatos">
+    <p>Información no disponible</p>
+  </section>
+
+  <script src="indexed.js"></script>
+</body>
+</html>
